@@ -1,8 +1,12 @@
 <template>
-    <div class="quote" @click="destroyer()" v-if="shower">
-        <slot>
+    <div class="col-sm-6 col-md-4 col-lg-3" @click="destroyer()" v-if="shower">
+        <div class="panel panel-default">
+            <div class="panel-body quote">
+                <slot>
 
-        </slot>
+                </slot>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -26,7 +30,18 @@
 </script>
 
 <style scoped>
+    .panel-body{
+        font-family: 'Arizonia', cursive;
+        font-size: 24px;
+        color: #6e6e6e
+    }
     .quote {
+        cursor: pointer;
+    }
+    .quote:hover {
+        background-color: #ffe2e2;
+    }
+ /*   .quote {
         font-family: 'Arizonia', sans-serif;
         font-size: 2em;
         height: 110px;
@@ -35,5 +50,5 @@
         border: 1px solid black;
         padding: 5%;
         text-align: center
-    }
+    }*/
 </style>

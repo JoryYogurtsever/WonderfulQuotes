@@ -1,10 +1,9 @@
 <template>
     <div class="container">
         <progress-bar :quoteCount="quoteCount"></progress-bar>
-        <input-box @input="quoteCount++" class="innie" @counterUp="quoteCount++"></input-box>
+        <input-box class="innie" @counterUp="quoteCount++"></input-box>
         <quotes></quotes>
         <footerz></footerz>
-        {{ quoteCount }}
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="quote in quotes" class="quote"><quote>{{ quote }}</quote></div>
+        <div v-for="quote in quotes"><quote>{{ quote }}</quote></div>
     </div>
 </template>
 
@@ -25,9 +25,9 @@
 
 
 <style scoped>
-    .quote {
+  /*  .quote {
         width:350px;
         float: left;
         margin: 15px
-    }
+    }*/
 </style>
